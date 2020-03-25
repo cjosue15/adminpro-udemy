@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
@@ -31,7 +32,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
