@@ -12,15 +12,35 @@ const pagesRoutes: Routes = [
     path: '',
     component: PagesComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'graficas1', component: Graficas1Component },
-      { path: 'promesas', component: PromesasComponent },
-      { path: 'rxjs', component: RxjsComponent },
-      { path: 'account-settings', component: AccountSettingsComponent },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
-    ]
-  }
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+        data: { titulo: 'Dashboard' },
+      },
+      {
+        path: 'progress',
+        component: ProgressComponent,
+        data: { titulo: 'Progress' },
+      },
+      {
+        path: 'graficas1',
+        component: Graficas1Component,
+        data: { titulo: 'Gráficas' },
+      },
+      {
+        path: 'promesas',
+        component: PromesasComponent,
+        data: { titulo: 'Promesas' },
+      },
+      { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' } },
+      {
+        path: 'account-settings',
+        component: AccountSettingsComponent,
+        data: { titulo: 'Ajustes del Tema' },
+      },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    ],
+  },
 ];
 
 // El forchild se usa cuando usas router oultes dentro de otros routeroulets
